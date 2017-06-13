@@ -1,5 +1,5 @@
 #import <QuartzCore/QuartzCore.h>
-#import "PHFDelegateChain.h"
+#import <PHFDelegateChain/PHFDelegateChain.h>
 #import "PHFComposeBarView.h"
 #import "PHFComposeBarView_TextView.h"
 #import "PHFComposeBarView_Button.h"
