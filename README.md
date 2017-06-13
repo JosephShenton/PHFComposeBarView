@@ -2,8 +2,8 @@
 
 ![demo](Screenshots/demo.gif)
 
-More screenshots: [without text](Screenshots/empty.png) and [with
-text](Screenshots/text.png).
+More screenshots: [without text](Screenshots/empty.png), [with
+text](Screenshots/text.png),  [dark closed](Screenshots/dark-closed.png) and  [dark active](Screenshots/dark-active.png).
 
 ***
 
@@ -71,6 +71,13 @@ PHFComposeBarView *composeBarView = [[PHFComposeBarView alloc] initWithFrame:fra
 [composeBarView setPlaceholder:@"Type something..."];
 [composeBarView setUtilityButtonImage:[UIImage imageNamed:@"Camera"]];
 [composeBarView setDelegate:self];
+```
+
+![Dark Demo](Screenshots/dark-active.png)
+
+To Implement a dark mode the code is as follows:
+```objectivec
+[composeBarView setBarStyle:UIBarStyleBlackTranslucent];
 ```
 
 To get notified of button presses, implement the optional methods from the

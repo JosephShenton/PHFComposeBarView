@@ -30,6 +30,7 @@ extern NSString *const PHFComposeBarViewFrameEndUserInfoKey;          // NSValue
 // stays fixed. When NO, the top margin is not flexible. This causes the view to
 // grow downwards when the height changes due to the text length. Turning this
 // off can be useful in some complicated view setups.
+- (void)setBarStyle:(UIBarStyle)style;
 @property (assign, nonatomic) BOOL autoAdjustTopOffset;
 
 @property (strong, nonatomic, readonly) UIButton *button;
@@ -95,3 +96,6 @@ extern NSString *const PHFComposeBarViewFrameEndUserInfoKey;          // NSValue
                toFrame:(CGRect)endFrame;
 
 @end
+
+static UIBarStyle barStyle;
+
